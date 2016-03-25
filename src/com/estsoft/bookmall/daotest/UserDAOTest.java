@@ -6,11 +6,6 @@ import com.estsoft.bookmal.vo.UserVO;
 import com.estsoft.bookmall.dao.UserDAO;
 
 public class UserDAOTest {
-	public static void main(String[] args) {
-		//1. insert test
-		insertTest();
-		getListTest();
-	}
 	
 	public static void insertTest(){
 		UserVO userVO = new UserVO();

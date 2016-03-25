@@ -6,13 +6,6 @@ import com.estsoft.bookmal.vo.CategoryVO;
 import com.estsoft.bookmall.dao.CategoryDAO;
 
 public class CategoryDAOTest {
-
-	public static void main(String[] args) {
-		//1. insert test
-		insertTest();
-		getListTest();
-	}
-	
 	public static void insertTest(){
 		CategoryVO categoryVO = new CategoryVO();
 		CategoryDAO categoryDAO = new CategoryDAO();

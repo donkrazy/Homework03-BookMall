@@ -33,11 +33,14 @@ public class BookDAO {
 			rs = pstmt.executeQuery();
 			if( rs.next() ) {
 				int no = rs.getInt( 1 );
-				String title = rs.getString( 2 );
-				int seats_left = rs.getInt( 3 );
+				int category_id = rs.getInt( 2 );
+				String title = rs.getString( 3 );
+				int price = rs.getInt( 4 );
 				bookVO = new BookVO();
 				bookVO.setId( no );
+				bookVO.setCategory_id(category_id);
 				bookVO.setTitle( title );
+				bookVO.setPrice(price);
 			}
 			
 		} catch( SQLException ex ) {

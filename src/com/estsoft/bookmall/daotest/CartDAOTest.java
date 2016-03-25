@@ -7,12 +7,6 @@ import com.estsoft.bookmall.dao.CartDAO;
 
 public class CartDAOTest {
 
-	public static void main(String[] args) {
-		//1. insert test
-		insertTest();
-		getListTest();
-	}
-	
 	public static void insertTest(){
 		CartVO cartVO = new CartVO();
 		CartDAO cartDAO = new CartDAO();
